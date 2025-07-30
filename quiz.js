@@ -1,25 +1,27 @@
 function checkAnswer() {
-    const correctAnswer = "4"; // Define the correct answer
+  const correctAnswer = "4"; // Define the correct answer
 
-    // Get the selected radio input
-    const selectedOption = document.querySelector('input[name="quiz"]:checked');
-    const feedback = document.getElementById("feedback");
+  // Get the selected radio input
+  const selectedOption = document.querySelector('input[name="quiz"]:checked');
 
-    // Check if an option was selected
-    if (!selectedOption) {
-        feedback.textContent = "please select an answer.";
-        feedback.style.color = "#dc3545"; //red
-        return;
-    }
-    const userAnswer = selectedOption.value;
+  const feedback = document.getElementById("feedback");
 
-    if (userAnswer === correctAnswer) {
-        feedback.textContent = "That's incorrect. Try again!";
-        feedback.style.color = "#dc3545"; // red
-    } else {
-        feedback.textContent = "correct! well done.";
-        feedback.style.color = "#28a745"; // green
-    }
+  // Check if an option was selected
+  if (!selectedOption) {
+    feedback.textContent = "Please select an answer.";
+    feedback.style.color = "#dc3545"; // red
+    return;
+  }
+
+  const userAnswer = selectedOption.value;
+
+  if (userAnswer === correctAnswer) {
+    feedback.textContent = "Correct! Well done.";
+    feedback.style.color = "#28a745"; // green
+  } else {
+    feedback.textContent = "That's incorrect. Try again!";
+    feedback.style.color = "#dc3545"; // red
+  }
 }
 
 // Add click event listener to the submit button
