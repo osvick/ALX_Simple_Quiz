@@ -14,11 +14,11 @@ function checkAnswer() {
     const userAnswer = selectedOption.value;
 
     if (userAnswer === correctAnswer) {
-        feedback.textContent = "correct! well done.";
-        feedback.style.color = "#28a745"; // green
-    } else {
         feedback.textContent = "That's incorrect. Try again!";
         feedback.style.color = "#dc3545"; // red
+    } else {
+        feedback.textContent = "correct! well done.";
+        feedback.style.color = "#28a745"; // green
     }
 }
 
