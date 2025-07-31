@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#calculator-container {
+    text-align: center;
+    background-color: #c1c1d6;
+}
+
+input[type="number"] {
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    font-size: 16px;
+    color: green;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    column-gap: 0.9em;
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 20px;
+    color: rgb(51, 171, 157);
+}
